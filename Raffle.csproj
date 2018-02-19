@@ -90,6 +90,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\addForce.cs" />
     <Compile Include="Assets\Script\FullScreen.cs" />
     <Compile Include="Assets\Script\spawnObject.cs" />
   </ItemGroup>
