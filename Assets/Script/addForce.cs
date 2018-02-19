@@ -12,6 +12,6 @@ public class addForce : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.AddForce(transform.forward * thrust, ForceMode.Acceleration);
+        rb.AddForce(transform.forward* thrust, ForceMode.Acceleration);
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -77,15 +77,17 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFiltering: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
     m_PVRFilteringMode: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -107,6 +109,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &449275148
 Prefab:
@@ -117,11 +121,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4215762962306496, guid: 8bdfbc1ba510544a19771f29585d1fab, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -215
       objectReference: {fileID: 0}
     - target: {fileID: 4215762962306496, guid: 8bdfbc1ba510544a19771f29585d1fab, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 196
       objectReference: {fileID: 0}
     - target: {fileID: 4215762962306496, guid: 8bdfbc1ba510544a19771f29585d1fab, type: 2}
       propertyPath: m_LocalPosition.z
@@ -147,13 +151,47 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114056945483334300, guid: 8bdfbc1ba510544a19771f29585d1fab,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: gold
       value: 
       objectReference: {fileID: 1131637941643430, guid: 8bdfbc1ba510544a19771f29585d1fab,
         type: 2}
-    m_RemovedComponents: []
+    - target: {fileID: 0}
+      propertyPath: gridX
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spacing
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 54474605213080976, guid: 8bdfbc1ba510544a19771f29585d1fab,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23592841552351924, guid: 8bdfbc1ba510544a19771f29585d1fab,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 135453419274182758, guid: 8bdfbc1ba510544a19771f29585d1fab,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114131002771421858, guid: 8bdfbc1ba510544a19771f29585d1fab,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114131002771421858, guid: 8bdfbc1ba510544a19771f29585d1fab,
+        type: 2}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 1420161856}
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 54474605213080976, guid: 8bdfbc1ba510544a19771f29585d1fab, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 8bdfbc1ba510544a19771f29585d1fab, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1174073078
@@ -206,8 +244,8 @@ Camera:
     height: 1
   near clip plane: 1
   far clip plane: 1000
-  field of view: 73.1
-  orthographic: 1
+  field of view: 83
+  orthographic: 0
   orthographic size: 303.0184
   m_Depth: -1
   m_CullingMask:
@@ -223,7 +261,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!4 &1174073082
 Transform:
   m_ObjectHideFlags: 0
@@ -231,12 +268,37 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1174073078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: -33, z: -426}
+  m_LocalPosition: {x: 2, y: -33, z: -606}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1420161854 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1131637941643430, guid: 8bdfbc1ba510544a19771f29585d1fab,
+    type: 2}
+  m_PrefabInternal: {fileID: 449275148}
+--- !u!114 &1420161855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420161854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6e3740cae3f45a41a97f86e7371d1aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  block1: {fileID: 1131637941643430, guid: 8bdfbc1ba510544a19771f29585d1fab, type: 2}
+  worldWidth: 20
+  people: 500
+  spawnSpeed: 0
+--- !u!54 &1420161856 stripped
+Rigidbody:
+  m_PrefabParentObject: {fileID: 54685209670397880, guid: 8bdfbc1ba510544a19771f29585d1fab,
+    type: 2}
+  m_PrefabInternal: {fileID: 449275148}
 --- !u!1001 &1824454224
 Prefab:
   m_ObjectHideFlags: 0
@@ -276,7 +338,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64636513192337928, guid: 52c2b86d17b53714dad2cbf2e2874d90, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 52c2b86d17b53714dad2cbf2e2874d90, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1829132294
@@ -327,20 +390,6 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
