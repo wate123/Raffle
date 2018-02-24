@@ -91,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\getdigit.cs" />
+    <Compile Include="Assets\nextScene.cs" />
     <Compile Include="Assets\Script\CalculateNum.cs" />
     <Compile Include="Assets\Script\FullScreen.cs" />
     <Compile Include="Assets\Script\randomSpin.cs" />

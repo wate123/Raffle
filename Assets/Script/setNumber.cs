@@ -6,7 +6,7 @@ public class setNumber : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		//PlayerPrefs.SetInt()
 	}
 	
 	// Update is called once per frame

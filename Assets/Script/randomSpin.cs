@@ -6,20 +6,32 @@ public class randomSpin : MonoBehaviour {
     private Quaternion rotateAngal;
 	// Use this for initialization
 	void Start () {
+        Time.timeScale = 0;
         rotateAngal = transform.rotation;
         
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Time.timeScale = 1;
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             StartCoroutine(MyUpdate());
         }
+        StartCoroutine(waitStart());
+
+    }
+    IEnumerator waitStart()
+    {
+        yield return new WaitForSeconds(0);
         rotateAngal *= Quaternion.AngleAxis(45, Vector3.right);
         transform.rotation = Quaternion.Lerp(transform.rotation, rotateAngal, 12 * Random.Range(2.0f, 5.0f)
             * Time.deltaTime);
     }
+
 
     IEnumerator MyUpdate()
     {
