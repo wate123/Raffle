@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 881, y: 492}
-  m_MaxSize: {x: 16006, y: 14042}
+  m_MinSize: {x: 879, y: 492}
+  m_MaxSize: {x: 16004, y: 14042}
   vertical: 0
-  controlID: 61
+  controlID: 147
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 604, y: 492}
   m_MaxSize: {x: 12004, y: 14042}
   vertical: 1
-  controlID: 62
+  controlID: 83
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_MinSize: {x: 604, y: 221}
   m_MaxSize: {x: 12004, y: 4021}
   vertical: 0
-  controlID: 63
+  controlID: 84
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -281,8 +281,8 @@ MonoBehaviour:
     y: 0
     width: 279
     height: 947
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -316,10 +316,8 @@ MonoBehaviour:
     width: 636
     height: 608
   m_ViewPositions:
-    m_KeySerializationHelper:
-    - {fileID: 1107140071287252220, guid: 5972efba15cadbe439224f821b3ec815, type: 2}
-    m_ValueSerializationHelper:
-    - {x: 331.6, y: 305.6001}
+    m_KeySerializationHelper: []
+    m_ValueSerializationHelper: []
   m_PreviewAnimator: {fileID: 0}
   m_AnimatorController: {fileID: 9100000, guid: 5972efba15cadbe439224f821b3ec815,
     type: 2}
@@ -469,23 +467,23 @@ MonoBehaviour:
     height: 608
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c44bf8ff
-    m_LastClickedID: -504892
-    m_ExpandedIDs: ca4bf8ffaac4f8ff20c5f8ff98dbf8ff0edcf8ffbadff8ffbee6f8ff34e8f9ffc202fcff3803fcff1e0dfcff8a12fcff9467feffae68feffb469feffc069feffc6ebffff3cecffff92f7ffff18fcffff00000000942a00008a41000050420000de4200001666000034660000606600009466000094910000c09100008e920000ba920000
+    m_SelectedIDs: 1a2a0000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 18fcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Button
-      m_OriginalName: Button
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -504886
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -553,7 +551,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.16715074, y: 0.14524478, z: -0.024903858, w: 0.97485614}
     speed: 2
-    m_Value: {x: 0.16715074, y: 0.14524478, z: -0.024903858, w: 0.97485614}
+    m_Value: {x: -0.16715074, y: -0.14524478, z: 0.02490386, w: -0.9748562}
   m_Size:
     m_Target: 3921.3892
     speed: 2
@@ -632,19 +630,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/New folder
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/New folder
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Jun Lin\Desktop\Raffle
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 462d0000
-    m_LastClickedID: 11590
-    m_ExpandedIDs: 000000007c260000c826000006270000462d000000ca9a3bffffff7f
+    m_SelectedIDs: 7c260000
+    m_LastClickedID: 9852
+    m_ExpandedIDs: 000000007c260000f42600006e2700000c28000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -672,7 +670,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007c260000c8260000
+    m_ExpandedIDs: 000000007c260000f42600006e2700000c280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -779,7 +777,7 @@ MonoBehaviour:
     y: 92
     width: 277
     height: 926
-  m_ScrollPosition: {x: 0, y: 85.95508}
+  m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 310
