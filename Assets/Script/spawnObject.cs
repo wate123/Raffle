@@ -30,7 +30,7 @@ public class spawnObject : MonoBehaviour {
             yield return new WaitForSeconds(spawnSpeed);
             for (int z = 0; z < Math.Ceiling(Math.Sqrt(people)); z++)
             {
-                GameObject block = Instantiate(block1, Vector3.zero, block1.transform.rotation) as GameObject;
+                GameObject block = Instantiate(block1, new Vector3(0+2*z,0,0), block1.transform.rotation) as GameObject;
                 
                 block.transform.parent = transform;
                 block.transform.localPosition = new Vector3(x*1.1F, 0, z*1.1F);
