@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raffle", "Raffle.csproj", "{0349AD3C-7BB8-1387-AC82-4FB2BCB5F1DD}"
 EndProject
 Global

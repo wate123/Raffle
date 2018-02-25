@@ -26,7 +26,7 @@ public class randomSpin : MonoBehaviour {
     }
     IEnumerator waitStart()
     {
-        yield return new WaitForSeconds(0);
+        yield return new WaitForSeconds((float)0.1);
         rotateAngal *= Quaternion.AngleAxis(45, Vector3.right);
         transform.rotation = Quaternion.Lerp(transform.rotation, rotateAngal, 12 * Random.Range(2.0f, 5.0f)
             * Time.deltaTime);
